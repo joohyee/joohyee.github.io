@@ -1,0 +1,386 @@
+@import url(reset.css);
+/* 회원가입 */
+table#enroll {
+    border: 2px solid;
+    border-spacing: 10px;
+    border-radius: 20px;
+    border-style: dashed;
+    width: 500px;
+    margin: 0 auto;
+  }
+  table#enroll th {
+    text-align: right;
+  }
+  table#enroll td.btn-wrapper {
+    text-align: center;
+  }
+  .phone {
+    width: 30px;
+  }
+  span.req {
+    color: red;
+  }
+  .short {
+    width: 50px;
+  }
+/* Font */
+body {
+    color: #ffffff;
+    text-align: center;
+}
+
+h1 {
+   
+    font-weight: 500;
+    color: rgb(253, 250, 219);
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: 600;
+    color: rgb(253, 250, 219);
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    font-weight: bold;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    height: 100vh;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.category h2 {
+    font-size: 2.5rem;
+    margin: 20px;
+}
+
+.desc {
+    font-size: 1rem;
+    line-height: 1.3em;
+    font-weight: 200;
+}
+
+
+/* 해바라기 */
+header {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    z-index: 10;
+    width: 68%;
+    height: 100px;
+    line-height: 80px;
+}
+
+header li a {
+    position: relative;
+    top: 0;
+}
+
+header li a:hover {
+    top: -3px;
+}
+
+header .tooltip-text{
+    display: none;
+    position: absolute;
+    bottom: -30px;
+    left: -20px;
+    width: 70px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 5px 0;
+    background: rgba(255, 215, 231, 0.758);
+    color: rgba(82, 81, 81, 0.981);
+}
+
+header a:hover .tooltip-text {
+    display: block;
+}
+
+#landing {
+    background-image:url("../image/딸기.jpg");
+    background-size: contain;
+}
+
+#landing .title {
+    position: absolute;
+    margin-left: 150px;
+    top: 50%;
+    left: 30%;
+    transform: translate(-80%,-50%);
+}
+
+#landing .title h1 {
+    font-size: 50px;
+    }
+
+
+#introduce {
+    position: relative;
+    background-size: cover;
+    background-color: #AB88A0;
+}
+
+#introduce .img_box {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+#introduce .img_box img {
+    height: 90%;
+    margin-top: 20px;
+}
+
+#introduce h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+#introduce .desc_box {
+    margin-bottom: 10px;
+}
+
+#introduce .desc_box li p:first-child {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#introduce .desc_box li:not(:last-child) {
+    margin-right: 20px;
+}
+
+#introduce .desc_box li p:last-child {
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+#introduce .introduce_profile {
+    margin: 80px;
+    padding: 30px 20px;
+    border: 2px solid rgb(255, 250, 208);
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(255, 253, 149, 0.63);
+    /* width: 300px; */
+}
+.introduce_mini_box {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+
+}
+.introduce_mini_box:nth-child(1){
+    top: 30%;
+    left: 13%;
+}
+
+.introduce_mini_box:nth-child(2){
+    top: 30%;
+    right: 17%;
+}
+
+.introduce_mini_box:nth-child(3){
+    bottom: 15%;
+    left: 19%;
+}
+
+.introduce_mini_box:nth-child(4){
+    bottom: 40%;
+    left: 30%;
+
+}
+
+.introduce_mini_box:nth-child(5){
+    bottom: 33%;
+    right: 30%;
+}
+
+.introduce_mini_box:nth-child(6){
+    top: 43%;
+    right: 10%;
+}
+
+.introduce_mini_box:nth-child(7){
+    top: 30%;
+    left: 25%;
+}
+
+
+.introduce_mini_box .poster {
+    position: relative;
+    margin-top: 100px;
+    width: 200px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgb(255 255 255 / 63%);
+    
+}
+
+.introduce_mini_box .poster h2 {
+    color: white;
+    padding: 1.1em;
+    font-size: 1.2rem;
+}
+
+.introduce_mini_box .poster .item {
+    position: absolute;
+    width: 70%;
+    left: 16%;
+    top: 22%;
+    transform: translateZ(10px);
+}
+
+.introduce_mini_box img {
+    max-width: 105%;
+    height: auto;
+}
+
+.introduce_mini_box p {
+    padding: 0.5em 0;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+}
+
+ /* like */
+#like {
+    background-color: #B58F94;
+    position: relative;
+    background-size: cover;
+}
+
+#like .like_warp {
+    width: 980px;
+    height: 430px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#like .like_warp .likes {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: left 0.5s ease-in-out;
+
+}
+
+#like .like_warp .likes li:not(:last-child) {
+    position: relative;
+    float: left;
+    margin-right: 30px;
+}
+
+#like .likes_img_box {
+    width: 300px;
+    height: 300px;
+}
+
+#like .likes_img_box img{
+    width: 100%;
+    height: 100%;
+}
+
+#like .likes_text_box {
+    text-align: left;
+    margin: 20px 0;
+}
+
+#like .likes_text_box .title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#like .likes_text_box .desc {
+    margin-top: 10px;
+}
+
+
+/* roadmap */
+
+#roadmap {
+    background-color: rgba(58, 89, 127, 0.73);
+    background-size: cover;
+}
+
+#roadmap .roadmap_box {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    flex-direction: row;
+}
+
+#roadmap .roadmap_box .roadmap_detail {
+    position: relative;
+    margin-right: 30px;
+}
+
+#roadmap .roadmap_box .roadmap_detail:last-child {
+    margin-right: 0;
+}
+
+#roadmap .roadmap_detail .roadmap_detaile_imgbox {
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+#roadmap .roadmap_detail:hover .roadmap_detaile_imgbox:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: -35px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.6);
+    opacity: .5;
+} 
+
+#roadmap .roadmap_box .roadmap_detail .roadmap_detaile_imgbox img{
+    width: 100%;
+    height: 80%;
+    border-radius: 10%;
+}
+
+#roadmap .roadmap_box .roadmap_detail .roadmap_detaile_desc {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    line-height: 20px;
+}
+
+/* join */
+
+#join {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 224, 224);
+    background-color: #81829fd8;
+}
+
